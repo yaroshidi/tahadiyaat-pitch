@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tahadiyaat x Yar · Reels proposal</title>
+<meta name="description" content="A Reels proposal for Tahadiyaat, by Yar. November 2026.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0b5d3b; --green-d:#073d27; --green-l:#e8f3ec; --lime:#b6f36b;
+  --ink:#10201a; --muted:#5b6b64; --line:#dfe8e3; --bg:#ffffff; --soft:#f6f9f7;
+  --ar:"Noto Kufi Arabic","Noto Naskh Arabic","Geeza Pro","Segoe UI","Tahoma",sans-serif;
+  --en:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--en);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--green);text-underline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+h2{font-size:clamp(26px,5vw,38px);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin-bottom:18px}
+h3{font-size:18px;font-weight:700;line-height:1.3}
+p.lead{font-size:18px;color:var(--muted);max-width:640px}
+.ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate;text-align:right;line-height:1.9}
+.ar-inline{font-family:var(--ar);direction:rtl;unicode-bidi:isolate;font-weight:600;white-space:nowrap}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.brand span{color:var(--green)}
+.bar nav a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;margin-left:18px}
+.bar nav a.cta{background:var(--green);color:#fff;padding:8px 14px;border-radius:999px}
+@media(max-width:640px){.bar nav a:not(.cta){display:none}}
+
+/* hero */
+.hero{background:var(--green-d);color:#fff;position:relative;overflow:hidden;border-top:0;padding:88px 0 80px}
+.hero:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 20%,rgba(182,243,107,.18),transparent 45%),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 80px,transparent 80px 160px)}
+.hero .pitchline{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:420px;height:420px;border:2px solid rgba(255,255,255,.12);border-radius:50%}
+.hero .pitchline:after{content:"";position:absolute;left:50%;top:-200px;bottom:-200px;border-left:2px solid rgba(255,255,255,.12)}
+.hero .wrap{position:relative}
+.hero .tag{display:inline-block;font-size:13px;font-weight:600;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 12px;border-radius:999px;margin-bottom:26px}
+.hero h1{font-size:clamp(38px,8vw,72px);line-height:1.02;letter-spacing:-.035em;font-weight:800;max-width:780px}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero .x{margin-top:28px;font-size:20px;font-weight:600;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hero .x .ar-inline{font-size:22px}
+.hero .x i{font-style:normal;opacity:.5}
+.hero .date{margin-top:8px;opacity:.7;font-size:15px}
+
+/* note */
+.note{display:grid;grid-template-columns:1fr;gap:20px;max-width:720px}
+.note p{font-size:18px}
+.note .sig{font-weight:700;margin-top:6px}
+.note .sig span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+
+/* stats */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 34px}
+@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:22px 20px}
+.card .num{font-size:clamp(28px,5vw,38px);font-weight:800;letter-spacing:-.03em;color:var(--green);line-height:1.1}
+.card .lbl{font-size:14px;font-weight:600;margin-top:6px}
+.card .sub{font-size:13px;color:var(--muted);margin-top:4px}
+.card.hl{background:var(--green);border-color:var(--green);color:#fff}
+.card.hl .num{color:var(--lime)} .card.hl .sub{color:rgba(255,255,255,.75)}
+.about{background:var(--green-l);border-radius:18px;padding:22px 24px;margin-top:24px}
+.about p{font-size:16px}
+.findings{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:760px){.findings{grid-template-columns:1fr}}
+.findings h3{margin-bottom:10px}
+ul.clean{list-style:none}
+ul.clean li{position:relative;padding-left:22px;margin:10px 0;font-size:15.5px}
+ul.clean li:before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.takeaway{margin-top:32px;border-left:4px solid var(--green);padding:6px 0 6px 18px;font-size:18px;font-weight:600}
+.dated{font-size:13px;color:var(--muted)}
+
+/* ideas */
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+@media(max-width:760px){.ideas{grid-template-columns:1fr}}
+.idea{border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:34px 1fr;gap:4px 12px}
+.idea .n{grid-row:span 3;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
+.idea h3{font-size:16px}
+.idea .ar{font-size:17px;color:var(--green-d);font-weight:600;margin:2px 0}
+.idea p{font-size:14px;color:var(--muted)}
+.strat{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.strat{grid-template-columns:1fr}}
+.strat div{background:var(--soft);border-radius:16px;padding:20px}
+.strat b{display:block;font-size:15px;margin-bottom:6px;color:var(--green)}
+.strat p{font-size:14.5px}
+
+/* videos */
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;max-width:820px}
+@media(max-width:700px){.videos{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}}
+.vframe{position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 18px 40px rgba(7,61,39,.22)}
+.vframe video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.vbadge{position:absolute;top:12px;left:12px;z-index:2;background:rgba(0,0,0,.55);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;pointer-events:none}
+.vcap{margin-top:14px}
+.vcap h3{font-size:17px}
+.vcap p{font-size:14.5px;color:var(--muted);margin-top:4px}
+.vnote{margin-top:26px;font-size:14.5px;color:var(--muted);max-width:720px}
+
+/* pricing */
+.pilot{margin-top:28px;background:var(--green-d);color:#fff;border-radius:22px;padding:28px;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;position:relative;overflow:hidden}
+@media(max-width:760px){.pilot{grid-template-columns:1fr}}
+.pilot .rib{display:inline-block;background:var(--lime);color:var(--green-d);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;margin-bottom:12px}
+.pilot h3{font-size:26px}
+.pilot .price{font-size:40px;font-weight:800;letter-spacing:-.03em;margin-top:8px;color:var(--lime)}
+.pilot .price small{font-size:15px;font-weight:500;color:rgba(255,255,255,.75);letter-spacing:0}
+.pilot .credit{margin-top:12px;font-size:15px;background:rgba(255,255,255,.08);border-radius:12px;padding:12px 14px}
+.pilot ul.clean li:before{background:var(--lime)}
+.pilot ul.clean li{font-size:15px}
+.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:22px;align-items:stretch}
+@media(max-width:860px){.plans{grid-template-columns:1fr}}
+.plan{border:1px solid var(--line);border-radius:20px;padding:26px 22px;position:relative;background:#fff;display:flex;flex-direction:column}
+.plan h3{font-size:20px}
+.plan .price{font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--green);margin:8px 0 2px}
+.plan .price small{font-size:14px;color:var(--muted);font-weight:500;letter-spacing:0}
+.plan .vol{font-weight:600;font-size:15px;margin-bottom:10px}
+.plan ul.clean li{font-size:14.5px;margin:8px 0}
+.extras{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.extras{grid-template-columns:1fr}}
+.extras > div{background:var(--soft);border-radius:16px;padding:20px 22px}
+.extras h3{font-size:15px;margin-bottom:8px}
+.extras table{width:100%;border-collapse:collapse;font-size:14.5px}
+.extras td{padding:7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.extras tr:last-child td{border-bottom:0}
+.extras td:last-child{text-align:right;font-weight:700;white-space:nowrap;padding-left:12px}
+.fine{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* next */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px;counter-reset:s}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{border:1px solid var(--line);border-radius:18px;padding:22px}
+.step:before{counter-increment:s;content:"0" counter(s);display:block;font-weight:800;color:var(--green);font-size:22px;margin-bottom:6px}
+.step p{font-size:15px;color:var(--muted)}
+.contact{margin-top:34px;background:var(--green);color:#fff;border-radius:22px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.contact h3{font-size:24px}
+.contact p{opacity:.85}
+.contact .btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+.btn.w{background:#fff;color:var(--green-d)}
+.btn.o{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+
+footer{border-top:1px solid var(--line);padding:26px 0 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media(max-width:640px){
+  section{padding:48px 0}
+  .hero{padding:64px 0 60px}
+  .hero .pitchline{width:260px;height:260px;right:-140px}
+  .pilot,.contact{padding:22px}
+}
+@media print{.bar{display:none} section{break-inside:avoid-page}}
+
+.hero .sub{margin-top:22px;font-size:clamp(17px,2.4vw,20px);max-width:640px;color:rgba(255,255,255,.85)}
+.hero .btn{margin-top:28px}
+.hero .btn.w{background:var(--lime);color:var(--green-d)}
+.cards.c3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.cards.c3{grid-template-columns:1fr}}
+.card a{color:inherit}
+.plan .per{font-size:14px;color:var(--muted);margin-bottom:10px}
+.pilot .per{font-size:15px;color:rgba(255,255,255,.8);margin-top:2px}
+.ptable{width:100%;border-collapse:collapse;margin-top:26px;font-size:15px}
+.ptable th,.ptable td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}
+.ptable th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ptable td:nth-child(n+2),.ptable th:nth-child(n+2){text-align:right;white-space:nowrap}
+.ptable td b{color:var(--green)}
+.inc{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+@media(max-width:760px){.inc{grid-template-columns:1fr}}
+.inc > div{background:var(--soft);border-radius:16px;padding:20px 22px}
+.inc h3{font-size:15px;margin-bottom:6px}
+ul.clean.x li:before{background:#c9d4ce}
+.safe{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+@media(max-width:860px){.safe{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.safe{grid-template-columns:1fr}}
+.safe div{border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.safe b{display:block;color:var(--green);margin-bottom:4px}
+.safe p{font-size:14.5px;color:var(--muted)}
+.honest{margin-top:22px;background:var(--green-l);border-radius:16px;padding:18px 22px;font-size:15px;max-width:820px}
+.steps.s4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.steps.s4{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps.s4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="bar"><div class="wrap">
+  <a class="brand" href="https://yar.website">Yar<span>.</span></a>
+  <nav><a href="#samples">Samples</a><a href="#ideas">Ideas</a><a href="#pricing">Pricing</a><a class="cta" href="#next">Start the pilot</a></nav>
+</div></header>
+
+<section class="hero">
+  <div class="pitchline" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="tag">Tahadiyaat <span class="ar-inline" lang="ar">تحديات</span> × Yar · Reels proposal</span>
+    <h1>Your best Reels had <em>players</em> in them. Let's bring that back.</h1>
+    <p class="sub">From February to May, your Reels with players on the pitch got 12k to 17k views. Since June, most Reels on your page got under 500. Here's a simple, low-cost way to put people back in your feed.</p>
+    <a class="btn w" href="#samples">Watch the 2 samples we made for you</a>
+  </div>
+</section>
+
+<section id="note"><div class="wrap">
+  <div class="eyebrow">A quick note</div>
+  <div class="note">
+    <p>Hey, thanks for taking a look.</p>
+    <p>I went through your Instagram. The Reels with real players in them did really well, the one from 30 March got 16.8k views. Since June it's mostly posters and venue announcements and they get under 500 views.</p>
+    <p>So we made two sample videos for Tahadiyaat, they're just below. That's the kind of thing we would make for you every week.</p>
+    <p>No long contract. Start with 4 videos, post them, see how your audience reacts and decide after.</p>
+    <div class="sig">Yar<span>yar.website</span></div>
+  </div>
+</div></section>
+
+<section id="samples"><div class="wrap">
+  <div class="eyebrow">Made for Tahadiyaat</div>
+  <h2>Here's what it looks like for you</h2>
+  <p class="lead">Tap to play, sound on. Both were made for your brand, using your app's real features: booking, splitting the fee with EASYPAY and finding a keeper.</p>
+
+  <div class="videos">
+    <div>
+      <div class="vframe">
+        <span class="vbadge">Sample for Tahadiyaat</span>
+        <video controls playsinline preload="metadata" poster="img/friday-night-poster.jpg">
+          <source src="videos/friday-night.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vcap"><h3>Friday night</h3><p>Captain's POV: group-chat chaos, books on Tahadiyaat, banter at the floodlit pitch, the keeper found in the app, then the celebration.</p></div>
+    </div>
+    <div>
+      <div class="vframe">
+        <span class="vbadge">Sample for Tahadiyaat</span>
+        <video controls playsinline preload="metadata" poster="img/interviews-poster.jpg">
+          <source src="videos/interviews.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vcap"><h3>After the final whistle</h3><p>Three players on the WhatsApp chaos, splitting fees and finding a keeper. Ends with <span class="ar-inline" lang="ar">«من اليوم، تحديات!»</span></p></div>
+    </div>
+  </div>
+  <p class="honest"><b>How we make them:</b> these are UGC-style videos produced in-house, not filmed on location with hired creators. No shoot days, no actors to book, no pitch to rent. That's why we can turn them around in days and keep the price low.</p>
+</div></section>
+
+<section id="found"><div class="wrap">
+  <div class="eyebrow">What we saw on your Instagram</div>
+  <h2>Your audience already told you what works</h2>
+  <p class="dated">Public view counts from @tahadiyaatae, checked 14 Nov 2026. Tap a number to open the Reel.</p>
+
+  <div class="cards c3">
+    <div class="card hl"><div class="num"><a href="https://www.instagram.com/p/DWf6_y1Cqqd/">16,819</a></div><div class="lbl">Views, players Reel</div><div class="sub">30 Mar 2026 · with <span class="ar-inline" lang="ar">حمل التطبيق</span> at the end</div></div>
+    <div class="card"><div class="num">12–17k</div><div class="lbl">Views on each player Reel</div><div class="sub"><a href="https://www.instagram.com/p/DVGt8pUETx3/">23 Feb</a> 13,983 · <a href="https://www.instagram.com/p/DYT6fSqPFfm/">14 May</a> 11,802</div></div>
+    <div class="card"><div class="num">~180</div><div class="lbl">Avg. views, your 7 Reels since June</div><div class="sub">Mostly posters and venue announcements</div></div>
+  </div>
+
+  <p class="takeaway">One more sign: the only Reel on your page since June to pass 1,000 views (<a href="https://www.instagram.com/p/Dfb-rvXooVZ/">1,617, 7 Nov</a>) was a coach talking to camera. People watch people.</p>
+</div></section>
+
+<section id="ideas"><div class="wrap">
+  <div class="eyebrow">What we'd make</div>
+  <h2>Eight ideas, ready to script</h2>
+  <p class="lead">Each one opens with an Arabic, problem-first hook and ends on the app. You pick the ones you like for the pilot.</p>
+
+  <div class="ideas">
+    <div class="idea"><div class="n">1</div><h3>Friday chaos</h3><div class="ar" lang="ar">«كل جمعة نفس القصة: الملعب راح، والحارس ما رد، ومين يدفع؟»</div><p>The captain books, splits the fee and finds a keeper, all in the app.</p></div>
+    <div class="idea"><div class="n">2</div><h3>Book from your phone</h3><div class="ar" lang="ar">«تبي ملعب الليلة في أبوظبي؟ شوف.»</div><p>Talk to camera, then the booking flow on screen.</p></div>
+    <div class="idea"><div class="n">3</div><h3>No keeper? No problem</h3><div class="ar" lang="ar">«الحارس اعتذر قبل المباراة بساعة… وبعدين؟»</div><p>A short skit: the team finds a keeper through the app just in time.</p></div>
+    <div class="idea"><div class="n">4</div><h3>Post-match interviews</h3><div class="ar" lang="ar">«بعد المباراة: كيف حجزتوا الملعب اليوم؟»</div><p>Quick mic-in-hand questions as players walk off (like sample 2).</p></div>
+    <div class="idea"><div class="n">5</div><h3>No more chasing for money</h3><div class="ar" lang="ar">«تعبت تلاحق الشباب على فلوس الملعب؟»</div><p>EASYPAY in action, everyone pays their share.</p></div>
+    <div class="idea"><div class="n">6</div><h3>New pitch on the app</h3><div class="ar" lang="ar">«ملعب جديد على تحديات. نجربه؟»</div><p>A team's reaction to a new venue, to support your venue announcements.</p></div>
+    <div class="idea"><div class="n">7</div><h3>Refs wanted</h3><div class="ar" lang="ar">«يا حكم، الفرق تدور عليك. أنت وين؟»</div><p>A call to referees to sign up and get booked.</p></div>
+    <div class="idea"><div class="n">8</div><h3>Challenge us this Friday</h3><div class="ar" lang="ar">«تحدّوا فريقنا الجمعة. الحجز على تحديات.»</div><p>Plays on the name and the Challenger feature.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="eyebrow">How it works</div>
+  <h2>Simple, and you approve everything</h2>
+  <div class="steps s4">
+    <div class="step"><h3>Quick call</h3><p>15 minutes on what you want to push: bookings, EASYPAY, venues, refs.</p></div>
+    <div class="step"><h3>Hooks and scripts</h3><p>We send the hook and script for each video. Nothing gets made until you say ok.</p></div>
+    <div class="step"><h3>Videos in 7 days</h3><p>Finished 9:16 Reels within 7 days of script sign-off, ready to post.</p></div>
+    <div class="step"><h3>One free revision</h3><p>Want something changed? One round of edits per video is included.</p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <div class="eyebrow">Pricing</div>
+  <h2>Start small. Keep going only if you like it.</h2>
+  <p class="lead">All prices in AED. Prices exclude 5% VAT.</p>
+
+  <div class="pilot">
+    <div>
+      <span class="rib">Start here</span>
+      <h3>Pilot</h3>
+      <div class="price">AED 1,600 <small>one-off</small></div>
+      <div class="per">4 videos · AED 400 per video</div>
+      <div class="credit">Half to start, half on delivery. No commitment after.</div>
+    </div>
+    <ul class="clean">
+      <li>4 Reels from the ideas above (you pick)</li>
+      <li>Arabic or English hook, script and captions</li>
+      <li>Delivered within 7 days of script sign-off</li>
+      <li>1 free revision round per video</li>
+      <li>The videos are yours to post and use in ads</li>
+    </ul>
+  </div>
+
+  <div class="plans">
+    <div class="plan">
+      <h3>Monthly 8</h3>
+      <div class="price">2,800 <small>AED / month</small></div>
+      <div class="per">AED 350 per video</div>
+      <div class="vol">8 Reels a month (2 a week)</div>
+      <ul class="clean">
+        <li>Everything in the pilot</li>
+        <li>Monthly idea list you approve</li>
+        <li>Month to month, stop anytime</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Monthly 12</h3>
+      <div class="price">3,600 <small>AED / month</small></div>
+      <div class="per">AED 300 per video</div>
+      <div class="vol">12 Reels a month (3 a week)</div>
+      <ul class="clean">
+        <li>Everything in the pilot</li>
+        <li>Monthly idea list you approve</li>
+        <li>Month to month, stop anytime</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="inc">
+    <div>
+      <h3>Included</h3>
+      <ul class="clean">
+        <li>Concept, hook and script</li>
+        <li>Production and edit, music and sound</li>
+        <li>Burned-in captions, Arabic or English</li>
+        <li>Vertical 9:16, ready for Reels, TikTok and Stories</li>
+        <li>1 free revision round per video</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Not included</h3>
+      <ul class="clean x">
+        <li>Paid ad spend</li>
+        <li>Posting or managing your account</li>
+        <li>On-location shoots or hired creators</li>
+        <li>Extra revision rounds (AED 100 per video)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="safe">
+    <div><b>Small first step</b><p>4 videos for AED 1,600. If they're not for you, you stop there.</p></div>
+    <div><b>You approve first</b><p>Every script is signed off by you before we make anything.</p></div>
+    <div><b>Free revision</b><p>One round of changes per video, included.</p></div>
+    <div><b>No long contract</b><p>Monthly plans run month to month. Tell us before the next month and it stops.</p></div>
+    <div><b>Pay half upfront</b><p>The rest only when the videos are delivered.</p></div>
+    <div><b>You own them</b><p>Post them, boost them, reuse them. No usage fees.</p></div>
+  </div>
+  <p class="fine">We won't promise you a number of views or bookings, nobody can honestly do that. What we promise is good videos made for your brand, on time.</p>
+</div></section>
+
+<section id="next"><div class="wrap">
+  <div class="eyebrow">Next step</div>
+  <h2>Want the pilot?</h2>
+  <p class="lead">Reply to Yar with "pilot" and the 4 ideas you like (or let us pick). We'll send the scripts within 2 working days.</p>
+  <div class="contact">
+    <div><h3>Start the pilot</h3><p>yar@yar.website</p></div>
+    <div class="btns"><a class="btn w" href="mailto:yar@yar.website?subject=Tahadiyaat%20pilot&amp;body=Hi%20Yar%2C%20let%27s%20do%20the%20pilot.%20Ideas%3A%20">Email Yar</a></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© 2026 YAR Innovative Solutions FZCO · <a href="https://yar.website">yar.website</a></span>
+  <span>Prepared for Tahadiyaat · November 2026</span>
+</div></footer>
+
+</body>
+</html>
