@@ -54,11 +54,11 @@ p.lead{font-size:18px;color:var(--muted);max-width:640px}
 .hero .x i{font-style:normal;opacity:.5}
 .hero .date{margin-top:8px;opacity:.7;font-size:15px}
 
-/* note */
-.note{display:grid;grid-template-columns:1fr;gap:20px;max-width:720px}
-.note p{font-size:18px}
-.note .sig{font-weight:700;margin-top:6px}
-.note .sig span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+/* intro */
+.intro{max-width:740px}
+.intro p{font-size:clamp(20px,2.7vw,28px);line-height:1.35;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.intro p + p{margin-top:12px}
+.intro p:last-child{color:var(--green)}
 
 /* stats */
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0 34px}
@@ -95,8 +95,8 @@ ul.clean li:before{content:"";position:absolute;left:2px;top:.62em;width:8px;hei
 .strat p{font-size:14.5px}
 
 /* videos */
-.videos{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;max-width:820px}
-@media(max-width:700px){.videos{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}}
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+@media(max-width:860px){.videos{grid-template-columns:1fr;max-width:380px;margin-left:auto;margin-right:auto}}
 .vframe{position:relative;aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 18px 40px rgba(7,61,39,.22)}
 .vframe video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
 .vbadge{position:absolute;top:12px;left:12px;z-index:2;background:rgba(0,0,0,.55);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;pointer-events:none}
@@ -199,27 +199,24 @@ ul.clean.x li:before{background:#c9d4ce}
   <div class="pitchline" aria-hidden="true"></div>
   <div class="wrap">
     <span class="tag">Tahadiyaat <span class="ar-inline" lang="ar">تحديات</span> × Yar · Reels proposal</span>
-    <h1>Your best Reels had <em>players</em> in them. Let's bring that back.</h1>
-    <p class="sub">From February to May, your Reels with players on the pitch got 12k to 17k views. Since June, most Reels on your page got under 500. Here's a simple, low-cost way to put people back in your feed.</p>
-    <a class="btn w" href="#samples">Watch the 2 samples we made for you</a>
+    <h1>Three sample Reels, made for <em>Tahadiyaat</em>.</h1>
+    <p class="sub">Watch them on this page, sound on. If you like what you see, start with four videos. No long contract.</p>
+    <a class="btn w" href="#samples">Watch the 3 samples</a>
   </div>
 </section>
 
-<section id="note"><div class="wrap">
-  <div class="eyebrow">A quick note</div>
-  <div class="note">
-    <p>Hey, thanks for taking a look.</p>
-    <p>I went through your Instagram. The Reels with real players in them did really well, the one from 30 March got 16.8k views. Since June it's mostly posters and venue announcements and they get under 500 views.</p>
-    <p>So we made two sample videos for Tahadiyaat, they're just below. That's the kind of thing we would make for you every week.</p>
-    <p>No long contract. Start with 4 videos, post them, see how your audience reacts and decide after.</p>
-    <div class="sig">Yar<span>yar.website</span></div>
+<section id="intro"><div class="wrap">
+  <div class="intro">
+    <p>Your best Reels had players in them: 12k to 17k views, February to May.</p>
+    <p>Since June, it's been mostly posters, and most Reels landed under 500 views.</p>
+    <p>Here's what we'd post instead.</p>
   </div>
 </div></section>
 
 <section id="samples"><div class="wrap">
   <div class="eyebrow">Made for Tahadiyaat</div>
   <h2>Here's what it looks like for you</h2>
-  <p class="lead">Tap to play, sound on. Both were made for your brand, using your app's real features: booking, splitting the fee with EASYPAY and finding a keeper.</p>
+  <p class="lead">Tap to play, sound on. All three were made for your brand: booking, splitting the fee with EASYPAY, finding a keeper, and challenging a team.</p>
 
   <div class="videos">
     <div>
@@ -239,6 +236,15 @@ ul.clean.x li:before{background:#c9d4ce}
         </video>
       </div>
       <div class="vcap"><h3>After the final whistle</h3><p>Three players on the WhatsApp chaos, splitting fees and finding a keeper. Ends with <span class="ar-inline" lang="ar">«من اليوم، تحديات!»</span></p></div>
+    </div>
+    <div>
+      <div class="vframe">
+        <span class="vbadge">Sample for Tahadiyaat</span>
+        <video controls playsinline preload="metadata" poster="img/challenge-poster.jpg">
+          <source src="videos/challenge.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vcap"><h3>Challenge us this Friday</h3><p>Five players in green kits, on a floodlit pitch, dare you to challenge their team this Friday and book on Tahadiyaat. Ends with <span class="ar-inline" lang="ar">«أنشئ تحدي»</span> and download the app.</p></div>
     </div>
   </div>
   <p class="honest"><b>How we make them:</b> these are UGC-style videos produced in-house, not filmed on location with hired creators. No shoot days, no actors to book, no pitch to rent. That's why we can turn them around in days and keep the price low.</p>
