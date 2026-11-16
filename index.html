@@ -103,7 +103,14 @@ ul.clean li:before{content:"";position:absolute;left:2px;top:.62em;width:8px;hei
 .vcap{margin-top:14px}
 .vcap h3{font-size:17px}
 .vcap p{font-size:14.5px;color:var(--muted);margin-top:4px}
+.vcap .dl{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:700;color:var(--green);text-decoration:none;border-bottom:1.5px solid rgba(11,93,59,.35)}
+.vcap .dl:hover{border-bottom-color:var(--green)}
 .vnote{margin-top:26px;font-size:14.5px;color:var(--muted);max-width:720px}
+.freebar{display:flex;align-items:baseline;gap:10px 14px;flex-wrap:wrap;margin:20px 0 0;background:var(--lime);color:var(--green-d);border-radius:16px;padding:16px 20px;font-size:clamp(16px,2.2vw,19px);font-weight:600;line-height:1.4}
+.freebar .tag{display:inline-block;background:var(--green-d);color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 9px;border-radius:999px;position:relative;top:-1px}
+.safe-free{margin-top:26px;border:2px solid var(--green);background:var(--green-l);border-radius:16px;padding:18px 20px}
+.safe-free b{display:block;color:var(--green);margin-bottom:4px;font-size:16px}
+.safe-free p{font-size:14.5px;color:var(--muted)}
 
 /* pricing */
 .pilot{margin-top:28px;background:var(--green-d);color:#fff;border-radius:22px;padding:28px;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;position:relative;overflow:hidden}
@@ -200,7 +207,7 @@ ul.clean.x li:before{background:#c9d4ce}
   <div class="wrap">
     <span class="tag">Tahadiyaat <span class="ar-inline" lang="ar">تحديات</span> × Yar · Reels proposal</span>
     <h1>Three sample Reels, made for <em>Tahadiyaat</em>.</h1>
-    <p class="sub">Watch them on this page, sound on. If you like what you see, start with four videos. No long contract.</p>
+    <p class="sub">Watch them on this page, sound on. All 3 are free to keep and post, no obligation.</p>
     <a class="btn w" href="#samples">Watch the 3 samples</a>
   </div>
 </section>
@@ -217,6 +224,7 @@ ul.clean.x li:before{background:#c9d4ce}
   <div class="eyebrow">Made for Tahadiyaat</div>
   <h2>Here's what it looks like for you</h2>
   <p class="lead">Tap to play, sound on. All three were made for your brand: booking, splitting the fee with EASYPAY, finding a keeper, and challenging a team.</p>
+  <p class="freebar"><span class="tag">Free</span> Free, they're yours. Post all 3 on your page, no strings attached.</p>
 
   <div class="videos">
     <div>
@@ -226,7 +234,7 @@ ul.clean.x li:before{background:#c9d4ce}
           <source src="videos/friday-night.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="vcap"><h3>Friday night</h3><p>Captain's POV: group-chat chaos, books on Tahadiyaat, banter at the floodlit pitch, the keeper found in the app, then the celebration.</p></div>
+      <div class="vcap"><h3>Friday night</h3><p>Captain's POV: group-chat chaos, books on Tahadiyaat, banter at the floodlit pitch, the keeper found in the app, then the celebration.</p><a class="dl" href="videos/friday-night.mp4" download="tahadiyaat-friday-night.mp4">Download this video</a></div>
     </div>
     <div>
       <div class="vframe">
@@ -235,7 +243,7 @@ ul.clean.x li:before{background:#c9d4ce}
           <source src="videos/interviews.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="vcap"><h3>After the final whistle</h3><p>Three players on the WhatsApp chaos, splitting fees and finding a keeper. Ends with <span class="ar-inline" lang="ar">«من اليوم، تحديات!»</span></p></div>
+      <div class="vcap"><h3>After the final whistle</h3><p>Three players on the WhatsApp chaos, splitting fees and finding a keeper. Ends with <span class="ar-inline" lang="ar">«من اليوم، تحديات!»</span></p><a class="dl" href="videos/interviews.mp4" download="tahadiyaat-interviews.mp4">Download this video</a></div>
     </div>
     <div>
       <div class="vframe">
@@ -244,7 +252,7 @@ ul.clean.x li:before{background:#c9d4ce}
           <source src="videos/challenge.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="vcap"><h3>Challenge us this Friday</h3><p>Five players in green kits, on a floodlit pitch, dare you to challenge their team this Friday and book on Tahadiyaat. Ends with <span class="ar-inline" lang="ar">«أنشئ تحدي»</span> and download the app.</p></div>
+      <div class="vcap"><h3>Challenge us this Friday</h3><p>Five players in green kits, on a floodlit pitch, dare you to challenge their team this Friday and book on Tahadiyaat. Ends with <span class="ar-inline" lang="ar">«أنشئ تحدي»</span> and download the app.</p><a class="dl" href="videos/challenge.mp4" download="tahadiyaat-challenge.mp4">Download this video</a></div>
     </div>
   </div>
   <p class="honest"><b>How we make them:</b> these are UGC-style videos produced in-house, not filmed on location with hired creators. No shoot days, no actors to book, no pitch to rent. That's why we can turn them around in days and keep the price low.</p>
@@ -361,6 +369,10 @@ ul.clean.x li:before{background:#c9d4ce}
     </div>
   </div>
 
+  <div class="safe-free">
+    <b>The 3 samples are free</b>
+    <p>Keep them and post them, whatever you decide. No obligation.</p>
+  </div>
   <div class="safe">
     <div><b>Small first step</b><p>4 videos for $380. If they're not for you, you stop there.</p></div>
     <div><b>You approve first</b><p>Every script is signed off by you before we make anything.</p></div>
@@ -374,8 +386,8 @@ ul.clean.x li:before{background:#c9d4ce}
 
 <section id="next"><div class="wrap">
   <div class="eyebrow">Next step</div>
-  <h2>Want the pilot?</h2>
-  <p class="lead">Reply to Yar with "pilot" and the 4 ideas you like (or let us pick). We'll send the scripts within 2 working days.</p>
+  <h2>Post the 3 samples. Start the pilot when you're ready.</h2>
+  <p class="lead">They're yours to keep, no obligation. Post them, see the reaction, then reply to Yar with "pilot" and the 4 ideas you like (or let us pick). We'll send the scripts within 2 working days.</p>
   <div class="contact">
     <div><h3>Start the pilot</h3><p>yar@yar.website</p></div>
     <div class="btns"><a class="btn w" href="mailto:yar@yar.website?subject=Tahadiyaat%20pilot&amp;body=Hi%20Yar%2C%20let%27s%20do%20the%20pilot.%20Ideas%3A%20">Email Yar</a></div>
